@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Ficou Interessado?</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      * {
+        border: 10px;
+        margin: 10px;
+        padding: 15px;
+        color: #ffffff;
+      }
+      h1 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 2.5rem;
+        text-align: left;
+        width: 70%;
+      }
+      p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.8rem;
+      }
+      .h1p {
+        width: 70%;
+        text-align: left;
+      }
+      body {
+        background-image: url("images/background.jpg");
+      }
+      .htmlcss {
+        float: right;
+        height: 10%;
+        width: 20%;
+      }
+      .cowboy {
+        float: left;
+        height: 30%;
+        width: 30%;
+      }
+      .curso {
+        text-align: center;
+        box-shadow: 10px 10px 10px 10px #4c255a;
+        padding: 10px;
+        background-color: #252124;
+      }
+      .linksmenu {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 2rem;
+      }
+      header {
+        text-align: right;
+        background-image: url("images/headermenu.jpg");
+      }
+      @media(max-width:800px){
+        html{
+          font-size: 45%;
+        }
+        .linksmenu{
+          display: flex;
+          flex-direction: column;
+        }
+        .htmlcss{
+          width: 25%;
+        }
+        .cowboy{
+          width: 90%;
+        }
+        h1{
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="linksmenu" href="../index.html" target="_blank"
+        >Início</a
+      >
+      <a class="linksmenu" href="pagina1.html" target="_blank"
+        >Manifestos</a
+      >
+      <a class="linksmenu" href="pagina2.html" target="_blank"
+        >Recursos</a
+      >
+      <a class="linksmenu" href="pagina3.html" target="_blank"
+        >Pesquisa</a
+      >
+      <a class="linksmenu" href="pagina4.html" target="_blank"
+        >Avalie</a
+      >
+    </header>
+    <section class="curso">
+      <a
+        href="https://youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"
+        target="_blank"
+        ><img class="htmlcss" src="images/htmlcssjs.jpg" alt="cursoemvideo"
+      /></a>
+      <h1>
+        Ficou interessado nos temas anteriores? Aprenda a fazer seu próprio
+        espaço na internet!
+      </h1>
+      <p class="h1p">
+        Hoje em dia com o avanço da internet ficou muito mais fácil pra aprender
+        sobre o mundo digital, por isso se quiser saber mais sobre como um site
+        funciona e como você pode fazer o seu aqui ao lado tem um curso gratuito
+        no youtube sobre HTML e CSS, que são usados para produzir sites como
+        esse!
+      </p>
+      <br />
+      <p class="h1p">
+        Ou caso queira voltar para o Google, clique no banner abaixo!
+      </p>
+      <a href="https://www.google.com/"
+        ><img class="cowboy" src="images/spacecowboy.jpg" alt="seeya" /></a
+      ><br /><br /><br /><br /><br /><br />
+    </section>
+  </body>
+</html>

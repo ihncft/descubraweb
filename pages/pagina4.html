@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Avalie</title>
+    <style>
+      * {
+        border: 0px;
+        margin: 0px;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      header {
+        text-align: right;
+        background-image: url(images/headermenu.jpg);
+
+        margin: 10px;
+        padding: 15px;
+      }
+
+      body {
+        background-image: url(images/background.jpg);
+        padding: 15px;
+      }
+
+      .linksmenu {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: #ffffff;
+        font-size: 2rem;
+        text-decoration: none;
+        margin: 10px;
+      }
+
+      .secao form {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.5rem;
+      }
+
+      .secao {
+        text-align: left;
+        background-color: #252124;
+        color: #ffffff;
+        box-shadow: 10px 10px 10px 10px #4c255a;
+        padding: 15px;
+        margin: 10px;
+      }
+
+      .botao {
+        text-align: left;
+        word-spacing: 2px;
+      }
+
+      p {
+        padding-left: 10px;
+      }
+
+      h2 {
+        margin-left: 10px;
+        font-size: 2.2rem;
+      }
+      .texto {
+        font-size: 200%;
+        width: 50%;
+        font-family: Arial;
+      }
+      .gato {
+        float: right;
+        width: 20%;
+      }
+      @media(max-width:800px){
+        html{
+          font-size: 45%;
+        }
+        .linksmenu{
+          display: flex;
+          flex-direction: column;
+        }
+        textarea{
+          width: 80%;
+        }
+        .texto{
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a class="linksmenu" href="../index.html" target="_blank"
+        >Início</a
+      >
+      <a class="linksmenu" href="pagina1.html" target="_blank"
+        >Manifestos</a
+      >
+      <a class="linksmenu" href="pagina2.html" target="_blank"
+        >Recursos</a
+      >
+      <a class="linksmenu" href="pagina3.html" target="_blank"
+        >Pesquisa</a
+      >
+      <a class="linksmenu" href="pagina5.html" target="_blank"
+        >Faça o seu!</a
+      >
+    </header>
+
+    <!-- Formulario -->
+    <section class="secao" id="form">
+        <img class="gato" src="images/gato.png" alt="gato">
+      <form action="#" method="get" target="_blank">
+        <h2>
+          Caso tenha algum comentário ou informação relevante, veja abaixo.
+        </h2>
+
+        <br />
+
+        <p class="form">
+          <label for="nome">Nome</label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Insira o seu nome"
+          />
+        </p>
+
+        <br />
+
+        <p class="form">
+          <label for="e-mail">E-mail</label><br />
+          <input
+            type="text"
+            id="e-mail"
+            name="e-mail"
+            placeholder="Insira o seu e-mail"
+          />
+        </p>
+
+        <br />
+
+        <!-- Formulario Dropdown -->
+        <p>
+          <label for="avaliacao">Nos de a sua avaliação!</label>
+          <br />
+          <br />
+          <select id="avaliacao" name="avaliacao">
+            <option value="0">Nota</option>
+            <option value="1">1 estrela</option>
+            <option value="2">2 estrelas</option>
+            <option value="3">3 estrelas</option>
+            <option value="4">4 estrelas</option>
+            <option value="5">5 estrelas</option>
+          </select>
+        </p>
+
+        <br />
+        <br />
+
+        <!-- Formulário comentario sobre a página(Text area)-->
+        <p>
+          <label for="">Faça um comentario sobre a página</label><br />
+
+          <textarea
+            class="comentario"
+            id="comentario"
+            name="comentario"
+            cols="40"
+            rows="10"
+            title="Faça um comentario sobre o site"
+          >
+          </textarea>
+        </p>
+
+        <br />
+
+        <!-- Formulario buttoon -->
+        <p class="botao">
+          <input type="reset" value="[CANCELAR]" title="Limpa os dados" />
+          <input type="submit" value="[CONFIRMAR]" title="Confirma os dados" />
+        </p>
+      </form><br><br>
+      <p class="texto">
+        Sua avaliação é muito importante para que melhoras sejam feitas no site,
+        assim permitindo o aumento do nosso aprendizado e uma experiência mais
+        prazeroza para vocês usuários!
+      </p>
+    </section>
+  </body>
+</html>
