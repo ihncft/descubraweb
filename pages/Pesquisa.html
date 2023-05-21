@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Pesquisa</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      * {
+        border: 10px;
+        margin: 10px;
+        padding: 15px;
+        color: #ffffff;
+      }
+
+      h1 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 3rem;
+      }
+      p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.8rem;
+      }
+
+      body {
+        background-image: url("images/background.jpg");
+      }
+
+      header {
+        text-align: right;
+        background-image: url("images/headermenu.jpg");
+      }
+
+      .primeiro {
+        text-align: center;
+        box-shadow: 10px 10px 10px 10px #4c255a;
+        padding: 10px;
+        background-color: #252124;
+      }
+      #idgrid {
+        font-size: 1.6rem;
+        background-color: #4c255a;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        gap: 1px;
+        text-align: center;
+      }
+      .grid div {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: #823a83;
+      }
+
+      .imagem {
+        text-align: center;
+      }
+
+      .dirlinks {
+        text-align: center;
+        box-shadow: 10px 10px 10px 10px #4c255a;
+        padding: 10px;
+        background-color: #252124;
+      }
+      .linksmenu {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 2rem;
+      }
+      footer {
+        text-align: center;
+        box-shadow: 10px 10px 10px 10px #4c255a;
+        padding: 10px;
+        background-color: #252124;
+        font-size: 1.6rem;
+      }
+      .linkrodape {
+        font-size: 1.8rem;
+      }
+      @media(max-width:800px){
+        html{
+          font-size: 45%;
+        }
+        .linksmenu{
+          display: flex;
+          flex-direction: column;
+        }
+        .grid{
+          grid-template-columns: auto;
+        }
+        .grid div{
+          padding: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="topo"></nav>
+    <header>
+      <a class="linksmenu" href="../Inicio.html" target="_blank"
+        >Início</a
+      >
+      <a class="linksmenu" href="Manifestos.html" target="_blank"
+        >Manifestos</a
+      >
+      <a class="linksmenu" href="Recursos.html" target="_blank"
+        >Recursos</a
+      >
+      <a class="linksmenu" href="Avalie.html" target="_blank"
+        >Avalie</a
+      >
+      <a class="linksmenu" href="Aprenda.html" target="_blank"
+        >Faça o seu!</a
+      >
+    </header>
+    <div class="primeiro">
+      <h1>Sobre a pesquisa atualmente</h1>
+      <p>
+        A internet é enorme, mas normalmente nós vemos apenas uma pequena fração
+        dela. Há um grande problema com a descoberta de conteúdo na internet
+        hoje. Entre eles é possível citar mecanismos de pesquisa apoiados com
+        optimizações "SEO" e plataformas de mídias sociais nos atraindo com
+        algoritmos. Aí fica a pergunta? Como devemos realmente alimentar nosso
+        desejo de navegar digitalmente?
+      </p>
+    </div>
+    <div class="primeiro">
+      <h1>Alternativas ao Google</h1>
+      <p>
+        Nós relutantemente usamos o Google para obter respostas rápidas, mas as
+        vezes você se cansa de ver os mesmos 10 sites na primeira página, ou
+        quer procurar respostas mais escondidas. Use estes sites abaixo pra
+        quando estiver entediado ou estiver apenas procurando sites novos
+      </p>
+      <section class="secaogrid" id="idgrid">
+        <div class="grid">
+          <div>
+            <a href="https://searchmysite.net/" target="_blank">SearchMySite</a>
+          </div>
+          <div>
+            <a href="https://search.marginalia.nu/" target="_blank"
+              >Marginalia.nu</a
+            >
+          </div>
+          <div>
+            <a href="https://oldavista.com/" target="_blank">Oldavista</a>
+          </div>
+          <div>
+            <a href="https://www.webcrawler.com/" target="_blank">Webcrawler</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="dirlinks">
+      <h1>Diretórios de links</h1>
+      <p>
+        Na internet há vários diretórios, geralmente com curadoria de uma única
+        pessoa ou grupo. Eles podem ser um ótimo lugar para encontrar links para
+        sites interessantes e não muito conhecidos! Você pode encontrar uma
+        lista de sites como esses no grid abaixo.
+      </p>
+      <section class="secaogrid" id="idgrid">
+        <div class="grid">
+          <div>
+            <a href="https://blog.spacehey.com/entry?id=29337" target="_blank"
+              >Cybervenus' Directory</a
+            >
+          </div>
+          <div>
+            <a href="https://gossipsweb.net/" target="_blank">Gossip's Web</a>
+          </div>
+          <div>
+            <a href="https://rabidrodent.neocities.org/links/" target="_blank"
+              >rabidroden's links</a
+            >
+          </div>
+          <div>
+            <a href="https://youtuube.neocities.org/Websites" target="_blank"
+              >youtuube's Websites</a
+            >
+          </div>
+          <div>
+            <a href="https://satyrs.eu/linkroll/" target="_blank"
+              >satyr's Linkroll</a
+            >
+          </div>
+          <div>
+            <a href="https://peelopaalu.neocities.org/" target="_blank"
+              >Peelopaalu's Link Directory</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <h3>Rodapé</h3>
+      <a class="linkrodape" href="#topo">Voltar ao topo</a>
+    </footer>
+  </body>
+</html>
